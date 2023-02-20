@@ -1,3 +1,29 @@
+@font-face {
+  font-family: 'aukera';
+  src: url('assets/font/aukera/aukera-Regular.eot');
+  src: url('assets/font/aukera/aukera-Regular.eot') format('embedded-opentype'),
+      url('assets/font/aukera/aukera-Regular.woff2') format('woff2'),
+      url('assets/font/aukera/aukera-Regular.woff') format('woff'),
+      url('assets/font/aukera/aukera-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Blocus';
+  src: url('assets/font/blocus/Blocus-Regular.eot');
+  src: url('assets/font/blocus/Blocus-Regular.eot') format('embedded-opentype'),
+      url('assets/font/blocus/Blocus-Regular.woff2') format('woff2'),
+      url('assets/font/blocus/Blocus-Regular.woff') format('woff'),
+      url('assets/font/blocus/Blocus-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
 *{
   margin:0;
   padding: 0;
@@ -15,15 +41,16 @@ body {
 
 .starter {
   text-align: center;
-  font-size: 16px;
-  width : 300px;
+  font-size: 14px;
+  width : 400px;
   height : 100px;
   background-color: red;
   color : white;
   position : absolute;
   top : calc(50% - 100px);
-  right : calc(50% - 150px);
+  right : calc(50% - 200px);
   cursor: pointer;
+  font-family: 'aukera';
 }
 
 
