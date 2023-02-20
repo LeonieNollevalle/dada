@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Blocus';
+    src: url('Blocus-Regular.eot');
+    src: url('Blocus-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Blocus-Regular.woff2') format('woff2'),
+        url('Blocus-Regular.woff') format('woff'),
+        url('Blocus-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

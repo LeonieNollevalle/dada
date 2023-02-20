@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'aukera';
+    src: url('aukera-Regular.eot');
+    src: url('aukera-Regular.eot?#iefix') format('embedded-opentype'),
+        url('aukera-Regular.woff2') format('woff2'),
+        url('aukera-Regular.woff') format('woff'),
+        url('aukera-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
