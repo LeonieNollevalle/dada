@@ -1,18 +1,62 @@
+*{
+  margin:0;
+  padding: 0;
+  border : 0px;
+
+}
+
+
 body {
   background-color: black;
   width: 100vw;
   height: 100vh;
 }
-*{
-  margin:0;
-  padding: 0;
+
+
+.start {
+  padding : 30px 50px;
+  background-color: white;
+  color : black;
+  width: fit-content;
+  height: fit-content;
+  position : absolute;
+  display: flex;
+  flex-direction: column;
+  gap : 20px;
+  position : absolute;
+  top : calc(50% - 
 }
 
-section {
-  width : 100vw;
-  height : 100vh;
+.start div {
+  display : flex;
+  flex-direction: row;
+  grid-gap: 20px;
 }
 
-p {
-  color : red;
+.start button {
+  background-color: black ;
+  color : white;
+  padding : 10px 20px;
+  width: 50%;
+}
+
+.intro {
+  visibility: hidden;
+  position : absolute;
+  background-color: black;
+  width : 100%;
+  height : 100%;
+}
+
+
+.step1 {
+ visibility: hidden;
+}
+
+.step2 {
+  visibility: hidden;
+}
+
+.step3 {
+  visibility: hidden;
 }
