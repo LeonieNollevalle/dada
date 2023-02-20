@@ -13,32 +13,19 @@ body {
 }
 
 
-.start {
-  padding : 30px 50px;
-  background-color: white;
-  color : black;
-  width: fit-content;
-  height: fit-content;
-  position : absolute;
-  display: flex;
-  flex-direction: column;
-  gap : 20px;
-  position : absolute;
-  top : calc(50% - 
-}
-
-.start div {
-  display : flex;
-  flex-direction: row;
-  grid-gap: 20px;
-}
-
-.start button {
-  background-color: black ;
+.starter {
+  text-align: center;
+  font-size: 16px;
+  width : 300px;
+  height : 100px;
+  background-color: red;
   color : white;
-  padding : 10px 20px;
-  width: 50%;
+  position : absolute;
+  top : calc(50% - 100px);
+  right : calc(50% - 150px);
+  cursor: pointer;
 }
+
 
 .intro {
   visibility: hidden;
