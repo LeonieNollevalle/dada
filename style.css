@@ -38,28 +38,59 @@ body {
   height: 100vh;
 }
 
+.hidden {
+  visibility: hidden;
+}
 
 .starter {
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   width : 400px;
   height : 100px;
-  background-color: red;
+  background-color: black;
   color : white;
   position : absolute;
   top : calc(50% - 100px);
   right : calc(50% - 200px);
   cursor: pointer;
   font-family: 'aukera';
+  border-radius: 50%;
+  border: 2px solid white;
+  z-index: 20;
+}
+.starter:hover {
+
+  background-color: red;
+ 
 }
 
 
 .intro {
-  visibility: hidden;
   position : absolute;
-  background-color: black;
-  width : 100%;
-  height : 100%;
+  width : 100vw;
+  height : 100vh;
+  z-index: 10;
+  top:0;
+  left: 0;
+  box-sizing: content-box;
+}
+
+.road{
+  position : absolute;
+  width : 100vw;
+  height : 100vh;
+  z-index: 15;
+  top:0;
+  left: 0;
+  box-sizing: content-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-37%, -35%) scale(0.7);
+}
+
+#video2{
+  height: 30%;
 }
 
 
