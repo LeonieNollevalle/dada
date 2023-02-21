@@ -5,11 +5,11 @@ let videoContainer = document.querySelector('#video-container')
 
 startButton.addEventListener('click', function(){
 startButton.classList.add('hidden')
-startVideo.play();
+startIntroVideo.play();
 setTimeout(() => {
   videoContainer.classList.remove('hidden');
   videoContainer.classList.add('road'); 
-  startVideo2.play(); 
-  startVideo.classList.add('hidden');
+  startRoadVideo.play(); 
+  startIntroVideo.classList.add('hidden');
 }, "15000")
 });
