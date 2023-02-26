@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./step1.css">
+  <link id="css" rel="stylesheet" href="style.css">
   
   <title>DADA</title>
 </head>
@@ -112,6 +112,13 @@
       <img src="../assets/images/initial-body/sticker.png"/>
     </div> 
 </body>
-<script src="../index.js"></script>
-<script src="./step1.js"></script>
+<script src="index.js"></script>
+<script src="intro.js"></script>
+<script>
+let transformed = document.getElementsByClassName("transformed");
+
+if (transformed.length > 0) {
+  console.log("cheh");
+  window.location.href = "step2.html";
+}</script>
 </html>

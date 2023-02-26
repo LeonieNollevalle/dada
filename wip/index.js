@@ -1,3 +1,5 @@
+window.onload =()=>{
+
 // gear-lever step
 
 let knob = document.querySelector ('.knob');
@@ -21,6 +23,7 @@ let foot1 = document.querySelector('#foot1');
 let foot2 = document.querySelector('#foot2');
 let sticker = document.querySelector('#sticker');
 
+
 // Body parts 
 
 let headImg = document.querySelector('#headImg');
@@ -43,6 +46,10 @@ let factory = new Audio('../assets/sounds/factory-.mp3');
 let metal = new Audio('../assets/sounds/metal-impact.mp3');
 let klaxon = new Audio('../assets/sounds/klaxon.mp3');
 let frein = new Audio('../assets/sounds/car-skid.mp3');
+
+// css file
+let cssLink = document.querySelector('#css');
+
 
 speedOne.addEventListener('click', function(){
   speedOne.style.color = 'red';
@@ -130,6 +137,7 @@ headImg.addEventListener('click', function(){
   blinker.volume = 0.5;
   blinker.play();
   blinker.currentTime = 0;
+  head.classList.add('transformed');
 
 
 })
@@ -219,3 +227,11 @@ foot2Img.addEventListener('click', function(){
 numberplate.addEventListener('click', function(){
   klaxon.play();
 })
+
+
+
+if (1 > 0) {
+  console.log("nullos")
+}
+
+}

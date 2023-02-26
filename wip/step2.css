@@ -1,0 +1,145 @@
+/* FONTS */
+
+@font-face {
+    font-family: 'aukera';
+    src: url('../assets/font/aukera/aukera-Regular.eot');
+    src: url('../assets/font/aukera/aukera-Regular.eot') format('embedded-opentype'),
+        url('../assets/font/aukera/aukera-Regular.woff2') format('woff2'),
+        url('../assets/font/aukera/aukera-Regular.woff') format('woff'),
+        url('../assets/font/aukera/aukera-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Blocus';
+    src: url('../assets/font/blocus/Blocus-Regular.eot');
+    src: url('../assets/font/blocus/Blocus-Regular.eot') format('embedded-opentype'),
+        url('../assets/font/blocus/Blocus-Regular.woff2') format('woff2'),
+        url('../assets/font/blocus/Blocus-Regular.woff') format('woff'),
+        url('../assets/font/blocus/Blocus-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /* BASE */
+  
+  * {
+    margin:0;
+    padding: 0;
+    border : 0px;
+  }
+  
+  body {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  /* STEP2 */
+
+.step2 {
+    color: red;
+    font-family: 'Blocus';
+    position : absolute;
+    z-index: -10;
+}
+
+.text1 {
+    font-size : 80px;
+    width : 600px;
+    top : 20%;
+    left : 10%;
+}
+
+.text2 {
+    font-size : 40px;
+    width : 1000px;
+    top : 60%;
+    right : 10%;
+}
+
+.all {
+    position: absolute;
+    transform: rotate(-90deg);
+}
+
+.head {
+    width: 320px;
+    left : 10%;
+    top: calc(50% - 175px);
+}
+
+.trunk{
+    width : 600px;
+    left : calc(10% + 296px);
+    top : calc(50% - 353px);
+}
+
+.arm1 {
+    width: 330px;
+    left: calc(10% + 356px);
+    top: calc(50% - 32px);
+    transform: rotate(-70deg);
+}
+
+.arm2 {
+    width: 330px;
+    left: calc(10% + 356px);
+    top: calc(50% - 421px);
+    transform: rotate(-100deg);
+}
+
+.sticker {
+    width: 400px;
+    left: calc(10% + 452px);
+    top: calc(50% - 100px);
+}
+
+.numberplate {
+    width: 400px;
+    left: calc(10% + 708px);
+    top: calc(50% + 250px);
+    transform: rotate(-7deg);
+    z-index: -2;
+}
+
+.leg1 {
+    width: 350px;
+    left: calc(10% + 930px);
+    top: calc(50% - 283px);
+    z-index: -4;
+    transform: rotate(-85deg);
+}
+
+.leg2 {
+    width: 350px;
+    left: calc(10% + 930px);
+    top: calc(50% - 511px);
+    z-index: -4;
+    transform: rotate(-94deg);
+}
+
+.foot1 {
+
+    width: 350px;
+    left: calc(10% + 1279px);
+    top: calc(50% + 88px);
+    transform: rotate(-99deg);
+    z-index: -5;
+}
+
+.foot2 {
+    width: 350px;
+    left: calc(10% + 1279px);
+    top: calc(50% + -183px);
+    transform: rotate(-76deg);
+    z-index: -5;
+}
