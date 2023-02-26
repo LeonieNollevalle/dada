@@ -53,15 +53,21 @@ speedOne.addEventListener('click', function(){
 });
 
 speedTwo.addEventListener('click', function(){
-  speedOne.style.color = 'white';
-  speedTwo.style.color = 'red';
-  knob.style.top = "57%";
-  knob.style.left = "5%";
-  trunk.classList.remove('hidden');
-  trunk.classList.add('trunk');
+  if (head.className != 'hidden'){
+    speedOne.style.color = 'white';
+    speedTwo.style.color = 'red';
+    knob.style.top = "57%";
+    knob.style.left = "5%";
+    trunk.classList.remove('hidden');
+    trunk.classList.add('trunk');
+  } else {
+    alert('Passe la première !')
+  }
+  
 });
 
 speedThree.addEventListener('click', function(){
+  if (trunk.className != 'hidden'){
   speedTwo.style.color = 'white';
   speedThree.style.color = 'red';
   knob.style.top = "23%";
@@ -70,32 +76,47 @@ speedThree.addEventListener('click', function(){
   arm1.classList.add('arm1');
   arm2.classList.remove('hidden');
   arm2.classList.add('arm2');
+  } else {
+    alert('Passe la seconde !')
+  }
+  
 });
 
 speedFour.addEventListener('click', function(){
-  speedThree.style.color = 'white';
-  speedFour.style.color = 'red';
-  knob.style.top = "58%";
-  knob.style.left = "25%";
-  foot1.classList.remove('hidden');
-  foot1.classList.add('foot1');
-  foot2.classList.remove('hidden');
-  foot2.classList.add('foot2');
-  numberplate.classList.remove('hidden');
-  numberplate.classList.add('numberplate');
+  if (arm1.className != 'hidden'){
+    speedThree.style.color = 'white';
+    speedFour.style.color = 'red';
+    knob.style.top = "58%";
+    knob.style.left = "25%";
+    foot1.classList.remove('hidden');
+    foot1.classList.add('foot1');
+    foot2.classList.remove('hidden');
+    foot2.classList.add('foot2');
+    numberplate.classList.remove('hidden');
+    numberplate.classList.add('numberplate');
+  }
+  else {
+    alert('Passe la troisième !')
+  }
+  
 });
 
 speedFive.addEventListener('click', function(){
-  speedFour.style.color = 'white';
-  speedFive.style.color = 'red';
-  knob.style.top = "24%";
-  knob.style.left = "45%";
-  leg1.classList.remove('hidden');
-  leg1.classList.add('leg1');
-  leg2.classList.remove('hidden');
-  leg2.classList.add('leg2');
-  sticker.classList.remove('hidden');
-  sticker.classList.add('sticker');
+  if (foot1.className != 'hidden'){
+    speedFour.style.color = 'white';
+    speedFive.style.color = 'red';
+    knob.style.top = "24%";
+    knob.style.left = "45%";
+    leg1.classList.remove('hidden');
+    leg1.classList.add('leg1');
+    leg2.classList.remove('hidden');
+    leg2.classList.add('leg2');
+    sticker.classList.remove('hidden');
+    sticker.classList.add('sticker');
+  } else {
+    alert('Passe la quatrième !')
+  }
+  
 });
 
 
