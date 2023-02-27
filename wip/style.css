@@ -39,6 +39,10 @@ body {
   overflow: hidden;
 }
 
+html {
+  overflow: hidden;
+}
+
 .hidden {
   display: none;
 }
@@ -75,6 +79,10 @@ body {
   top:0;
   left: 0;
   box-sizing: content-box;
+}
+
+.text1, .text2, .phonopaper {
+  display: none;
 }
 
 /* ELEMENTS */

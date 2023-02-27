@@ -38,18 +38,87 @@
     height: 100vh;
     overflow: hidden;
   }
+
+  html {
+    overflow: hidden;
+  }
   
   .hidden {
     display: none;
   }
 
-  /* STEP2 */
+  /* LEVIER */
+
+.gear-lever {
+    width: 14.95%;
+    height: 25%;
+    position: absolute;
+    top: 72.3%; 
+    left:83.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 16;
+  
+  }
+  .gear-lever .knob {
+    height: 20%;
+    position: absolute;
+    top: 42%; 
+    left:25%;
+  }
+  .gear-lever img {
+    width: 50%;
+    
+  }
+  
+  .gear-lever div {
+    width: 44%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'aukera';
+    font-size: 20px;
+    color: white;
+    margin-block: 10px;
+  }
+  
+  .gear-lever p {
+    cursor : pointer;
+  }
+
+/* STEP1 */
+
+.phonopaper, .starter {
+    display: none;
+}
+.road{
+  position : absolute;
+  width : 100vw;
+  height : 100vh;
+  z-index: -65;
+  top:0;
+  left: 0;
+  box-sizing: content-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform:translate(0%, 0%) scale(0.8);
+}
+#road-video{
+  height: 115%;
+}
+
+
+/* STEP2 */
 
 .step2 {
     color: red;
     font-family: 'Blocus';
     position : absolute;
     z-index: -10;
+
 }
 
 .text1 {
@@ -66,44 +135,44 @@
     right : 10%;
 }
 
-.all {
+.element {
     position: absolute;
     transform: rotate(-90deg);
 }
 
-.head {
+#headImg {
     width: 320px;
     left : 10%;
     top: calc(50% - 175px);
 }
 
-.trunk{
-    width : 600px;
+#trunkImg {
+    width : 600px !important;
     left : calc(10% + 296px);
     top : calc(50% - 353px);
 }
 
-.arm1 {
+#arm1Img {
     width: 330px;
     left: calc(10% + 356px);
     top: calc(50% - 32px);
     transform: rotate(-70deg);
 }
 
-.arm2 {
+#arm2Img {
     width: 330px;
     left: calc(10% + 356px);
     top: calc(50% - 421px);
     transform: rotate(-100deg);
 }
 
-.sticker {
+#stickerImg {
     width: 400px;
     left: calc(10% + 452px);
     top: calc(50% - 100px);
 }
 
-.numberplate {
+#numberplateImg {
     width: 400px;
     left: calc(10% + 708px);
     top: calc(50% + 250px);
@@ -111,33 +180,32 @@
     z-index: -2;
 }
 
-.leg1 {
+#leg1Img {
     width: 350px;
     left: calc(10% + 930px);
     top: calc(50% - 283px);
-    z-index: -4;
+    z-index: -4 !important;
     transform: rotate(-85deg);
 }
 
-.leg2 {
+#leg2Img {
     width: 350px;
     left: calc(10% + 930px);
     top: calc(50% - 511px);
-    z-index: -4;
+    z-index: -4 !important;
     transform: rotate(-94deg);
 }
 
-.foot1 {
-
-    width: 350px;
+#foot1Img {
+    width: 350px !important;
     left: calc(10% + 1279px);
     top: calc(50% + 88px);
     transform: rotate(-99deg);
     z-index: -5;
 }
 
-.foot2 {
-    width: 350px;
+#foot2Img {
+    width: 350px !important;
     left: calc(10% + 1279px);
     top: calc(50% + -183px);
     transform: rotate(-76deg);
