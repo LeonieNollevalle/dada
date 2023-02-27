@@ -34,8 +34,8 @@
 
 body{
   background-color: black;
-  width: 100vw;
-  height: 100vh;
+  width: 1920px;
+  height: 1080px;
   overflow: hidden;
 }
 
@@ -54,7 +54,7 @@ html {
   height : 100vh;
   padding: 20px;
   z-index : -30;
-  left : calc(50% - 705px)
+  left : calc(60% - 705px)
 }
 
 .phonopaper:hover {
@@ -165,4 +165,5 @@ html {
   bottom: -8%;
   transform: rotate(343deg);
   z-index: 5;
+  
 }
