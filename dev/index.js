@@ -328,7 +328,3 @@ crash.addEventListener('click', function(){
 
 
 }
-
-console.log(speed);
-
-
