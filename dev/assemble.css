@@ -1,0 +1,213 @@
+/* FONTS */
+
+@font-face {
+    font-family: 'aukera';
+    src: url('../assets/font/aukera/aukera-Regular.eot');
+    src: url('../assets/font/aukera/aukera-Regular.eot') format('embedded-opentype'),
+        url('../assets/font/aukera/aukera-Regular.woff2') format('woff2'),
+        url('../assets/font/aukera/aukera-Regular.woff') format('woff'),
+        url('../assets/font/aukera/aukera-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Blocus';
+    src: url('../assets/font/blocus/Blocus-Regular.eot');
+    src: url('../assets/font/blocus/Blocus-Regular.eot') format('embedded-opentype'),
+        url('../assets/font/blocus/Blocus-Regular.woff2') format('woff2'),
+        url('../assets/font/blocus/Blocus-Regular.woff') format('woff'),
+        url('../assets/font/blocus/Blocus-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /* BASE */
+  
+  * {
+    margin:0;
+    padding: 0;
+    border : 0px;
+  }
+  
+  body {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  html {
+    overflow: hidden;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  /* LEVIER */
+
+.gear-lever {
+    width: 14.95%;
+    height: 25%;
+    position: absolute;
+    top: 72.3%; 
+    left:83.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 16;
+  
+  }
+  .gear-lever .knob {
+    height: 20%;
+    position: absolute;
+    top: 42%; 
+    left:25%;
+  }
+  .gear-lever img {
+    width: 50%;
+    
+  }
+  
+  .gear-lever div {
+    width: 44%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'aukera';
+    font-size: 20px;
+    color: white;
+    margin-block: 10px;
+  }
+  
+  .gear-lever p {
+    cursor : pointer;
+  }
+
+/* STEP1 */
+
+.phonopaper, .starter {
+    display: none;
+}
+.road{
+  position : absolute;
+  width : 100vw;
+  height : 100vh;
+  z-index: -65;
+  top:0;
+  left: 0;
+  box-sizing: content-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform:translate(0%, 0%) scale(0.8);
+}
+#road-video{
+  height: 115%;
+}
+
+
+/* STEP2 */
+
+.step2 {
+    color: red;
+    font-family: 'Blocus';
+    position : absolute;
+    z-index: -10;
+
+}
+
+.text1 {
+    font-size : 80px;
+    width : 600px;
+    top : 20%;
+    left : 10%;
+}
+
+.text2 {
+    font-size : 40px;
+    width : 1000px;
+    top : 60%;
+    right : 10%;
+}
+
+.element {
+    position: absolute;
+    transform: rotate(-90deg);
+}
+
+#headImg {
+    width: 320px;
+    left : 10%;
+    top: calc(50% - 175px);
+}
+
+#trunkImg {
+    width : 600px !important;
+    left : calc(10% + 296px);
+    top : calc(50% - 353px);
+}
+
+#arm1Img {
+    width: 330px;
+    left: calc(10% + 356px);
+    top: calc(50% - 32px);
+    transform: rotate(-70deg);
+}
+
+#arm2Img {
+    width: 330px;
+    left: calc(10% + 356px);
+    top: calc(50% - 421px);
+    transform: rotate(-100deg);
+}
+
+#stickerImg {
+    width: 400px;
+    left: calc(10% + 452px);
+    top: calc(50% - 100px);
+}
+
+#numberplateImg {
+    width: 400px;
+    left: calc(10% + 708px);
+    top: calc(50% + 250px);
+    transform: rotate(-7deg);
+    z-index: -2;
+}
+
+#leg1Img {
+    width: 350px;
+    left: calc(10% + 930px);
+    top: calc(50% - 283px);
+    z-index: -4 !important;
+    transform: rotate(-85deg);
+}
+
+#leg2Img {
+    width: 350px;
+    left: calc(10% + 930px);
+    top: calc(50% - 511px);
+    z-index: -4 !important;
+    transform: rotate(-94deg);
+}
+
+#foot1Img {
+    width: 350px !important;
+    left: calc(10% + 1279px);
+    top: calc(50% + 88px);
+    transform: rotate(-99deg);
+    z-index: -5;
+}
+
+#foot2Img {
+    width: 350px !important;
+    left: calc(10% + 1279px);
+    top: calc(50% + -183px);
+    transform: rotate(-76deg);
+    z-index: -5;
+}

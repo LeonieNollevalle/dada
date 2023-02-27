@@ -1,0 +1,168 @@
+/* FONTS */
+
+@font-face {
+  font-family: 'aukera';
+  src: url('../assets/font/aukera/aukera-Regular.eot');
+  src: url('../assets/font/aukera/aukera-Regular.eot') format('embedded-opentype'),
+      url('../assets/font/aukera/aukera-Regular.woff2') format('woff2'),
+      url('../assets/font/aukera/aukera-Regular.woff') format('woff'),
+      url('../assets/font/aukera/aukera-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Blocus';
+  src: url('../assets/font/blocus/Blocus-Regular.eot');
+  src: url('../assets/font/blocus/Blocus-Regular.eot') format('embedded-opentype'),
+      url('../assets/font/blocus/Blocus-Regular.woff2') format('woff2'),
+      url('../assets/font/blocus/Blocus-Regular.woff') format('woff'),
+      url('../assets/font/blocus/Blocus-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* BASE */
+
+* {
+  margin:0;
+  padding: 0;
+  border : 0px;
+}
+
+body{
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+html {
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+/* STEP3 */
+
+.phonopaper {
+  position: absolute;
+  height : 100vh;
+  padding: 20px;
+  z-index : -30;
+  left : calc(50% - 705px)
+}
+
+.phonopaper:hover {
+  z-index : 300000000;
+}
+
+.text1 {
+  font-size: 80px;
+  width: 600px;
+  bottom: -159px;
+  left: 10%;
+  transform: rotate(-112deg);
+  color: red;
+  font-family: 'Blocus';
+  position: absolute;
+  z-index: -10;
+}
+
+.text2 {
+  font-size: 40px;
+  width: 1000px;
+  bottom: calc(0px - 244px);
+  transform: rotate(8deg);
+  right: calc(0px - 36px);
+  color: red;
+  font-family: 'Blocus';
+  position: absolute;
+  z-index: -10;
+}
+
+.all {
+  position: absolute;
+  transform: rotate(-90deg);
+}
+
+.head {
+  width: 500px;
+  left: 40%;
+  bottom: -17%;
+  transform: rotate(34deg);
+}
+
+.trunk{
+  width : 600px;
+  left : 14%;
+  bottom: -300px;
+  transform: rotate(-77deg);
+}
+
+.arm1 {
+  width: 330px;
+  left: 34%;
+  bottom: -14%;
+  transform: rotate(147deg);
+}
+
+.arm2 {
+  width: 402px;
+  right: -7%;
+  bottom: -117px;
+  transform: rotate(25deg);
+}
+
+.sticker {
+  width: 600px;
+  left: -4%;
+  transform: rotate(355deg);
+  bottom: -110px;
+  z-index: 5;
+}
+
+.numberplate {
+  width: 600px;
+  left: 71%;
+  bottom: 6%;
+  transform: rotate(7deg);
+  z-index: 5;
+}
+
+.leg1 {
+  width: 350px;
+  left: -64px;
+  bottom: -194px;
+  z-index: -4;
+  transform: rotate(343deg);
+  z-index: 2;
+}
+
+.leg2 {
+  width: 350px;
+  left: 77%;
+  bottom: -42%;
+  z-index: -4;
+  transform: rotate(84deg);
+}
+
+.foot1 {
+  width: 457px;
+  left: 49%;
+  bottom: -113px;
+  transform: rotate(25deg);
+  z-index: 2;
+}
+
+.foot2 {
+  width: 600px;
+  right: 14%;
+  bottom: -8%;
+  transform: rotate(343deg);
+  z-index: 5;
+}
