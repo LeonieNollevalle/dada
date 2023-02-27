@@ -75,7 +75,7 @@ var cssLink = document.getElementById('css');
 function goToStep2 () {
   let transformed = document.getElementsByClassName("transformed");
   if (transformed.length == 9) {
-    cssLink.setAttribute('href', 'step2.css');
+    cssLink.setAttribute('href', 'assemble.css');
     foot1Img.src = "../assets/images/edited-body/foot1.png";
     arm1Img.src = "../assets/images/edited-body/arm1.png";
 
@@ -319,7 +319,7 @@ crash.addEventListener('click', function(){
   carSkid.play();
   carCrash.play();
   setTimeout(() => {
-    window.location.href = "step3.html"
+    window.location.href = "crash.html"
   }, 1200);
 } else {
   alert('Transformer le corps en cliquant sur chacune des parties !')
