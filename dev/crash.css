@@ -11,7 +11,7 @@
   font-style: normal;
   font-display: swap;
 }
-
+  
 @font-face {
   font-family: 'Blocus';
   src: url('../assets/font/blocus/Blocus-Regular.eot');
@@ -23,7 +23,7 @@
   font-style: normal;
   font-display: swap;
 }
-
+  
 /* BASE */
 
 * {
@@ -47,7 +47,8 @@ html {
   display: none;
 }
 
-/* STEP3 */
+
+/* POSITIONNEMENT DU PHONOPAPER */
 
 .phonopaper {
   position: absolute;
@@ -57,9 +58,8 @@ html {
   left : calc(60% - 705px)
 }
 
-.phonopaper:hover {
-  z-index : 300000000;
-}
+
+/* POSITIONNEMENT DES TEXTES */
 
 .text1 {
   font-size: 80px;
@@ -84,6 +84,9 @@ html {
   position: absolute;
   z-index: -10;
 }
+
+
+/* POSITIONNEMENT DES ELEMENTS DU CORPS */
 
 .all {
   position: absolute;

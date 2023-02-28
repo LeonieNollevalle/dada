@@ -2,23 +2,23 @@
 
 @font-face {
   font-family: 'aukera';
-  src: url('assets/font/aukera/aukera-Regular.eot');
-  src: url('assets/font/aukera/aukera-Regular.eot') format('embedded-opentype'),
-      url('assets/font/aukera/aukera-Regular.woff2') format('woff2'),
-      url('assets/font/aukera/aukera-Regular.woff') format('woff'),
-      url('assets/font/aukera/aukera-Regular.ttf') format('truetype');
+  src: url('../assets/font/aukera/aukera-Regular.eot');
+  src: url('../assets/font/aukera/aukera-Regular.eot') format('embedded-opentype'),
+      url('../assets/font/aukera/aukera-Regular.woff2') format('woff2'),
+      url('../assets/font/aukera/aukera-Regular.woff') format('woff'),
+      url('../assets/font/aukera/aukera-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
-
+  
 @font-face {
   font-family: 'Blocus';
-  src: url('assets/font/blocus/Blocus-Regular.eot');
-  src: url('assets/font/blocus/Blocus-Regular.eot') format('embedded-opentype'),
-      url('assets/font/blocus/Blocus-Regular.woff2') format('woff2'),
-      url('assets/font/blocus/Blocus-Regular.woff') format('woff'),
-      url('assets/font/blocus/Blocus-Regular.ttf') format('truetype');
+  src: url('../assets/font/blocus/Blocus-Regular.eot');
+  src: url('../assets/font/blocus/Blocus-Regular.eot') format('embedded-opentype'),
+      url('../assets/font/blocus/Blocus-Regular.woff2') format('woff2'),
+      url('../assets/font/blocus/Blocus-Regular.woff') format('woff'),
+      url('../assets/font/blocus/Blocus-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -26,7 +26,7 @@
 
 /* BASE */
 
-*{
+* {
   margin:0;
   padding: 0;
   border : 0px;
@@ -47,7 +47,16 @@ html {
   display: none;
 }
 
-/* INTRO */
+.text1, .text2, .phonopaper {
+  display: none;
+}
+
+.step2 {
+  visibility: hidden;
+}
+
+
+/* MISE EN FORME DU BOUTON */
 
 .starter {
   text-align: center;
@@ -71,6 +80,8 @@ html {
 }
 
 
+/* MISE EN FORME DU CONTAINER D'INTRO */
+
 .intro {
   position : absolute;
   width : 100vw;
@@ -81,11 +92,8 @@ html {
   box-sizing: content-box;
 }
 
-.text1, .text2, .phonopaper {
-  display: none;
-}
 
-/* ELEMENTS */
+/* MISE EN FORME DE LA VIDEO */
 
 .road{
   position : absolute;
@@ -105,17 +113,53 @@ html {
   height: 30%;
 }
 
-.step1 {
- visibility: hidden;
+
+/* MISE EN FORME DU LEVIER */
+
+.gear-lever {
+  width: 14.95%;
+  height: 25%;
+  position: absolute;
+  top: 72.3%; 
+  left:83.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
-.step2 {
-  visibility: hidden;
+.gear-lever .knob {
+  height: 20%;
+  position: absolute;
+  top: 42%; 
+  left:25%;
 }
 
-.step3 {
-  visibility: hidden;
+.gear-lever img {
+  width: 50%;
 }
+
+.gear-lever div {
+  width: 44%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'aukera';
+  font-size: 20px;
+  color: white;
+  margin-block: 10px;
+  cursor: pointer;
+}
+
+.gear-lever p {
+  cursor : pointer;
+}
+
+
+/* MISE EN FORME DES PARTIES DU CORPS */
+
+/* Tête */
 
 .head {
   border:2px solid white;
@@ -129,35 +173,43 @@ html {
   align-items: center;
   cursor: pointer;
 }
+
 .head img {
   width: 65%;
   transform: rotate(-90deg);
   cursor: pointer;
 }
+
 .head .span1 {
   border:2px solid white;
   right: 90%;
   width: 9.5%;
   position: absolute;
 }
+
 .head .span2 {
   border:2px solid white;
   bottom: 73%;
   height: 26.5%;
   position: absolute;
 }
+
 .head .span3 {
   border:2px solid white;
   top: 69%;
   height: 30%;
   position: absolute;
 }
+
 .head .span4 {
   border:2px solid white;
   left: 91%;
   width:8.5%;
   position: absolute;
 }
+
+
+/* Tronc */
 
 .trunk {
   border:2px solid white;
@@ -171,24 +223,28 @@ html {
   align-items: center;
   cursor: pointer;
 }
+
 .trunk .span1 {
   border:2px solid white;
   top: 85%;
   height: 14.5%;
   position: absolute;
 }
+
 .trunk .span2 {
   border:2px solid white;
   bottom: 90%;
   height: 9.5%;
   position: absolute;
 }
+
 .trunk .span3 {
   border:2px solid white;
   right: 79%;
   width: 20%;
   position: absolute;
 }
+
 .trunk .span4 {
   border:2px solid white;
   left: 81%;
@@ -201,8 +257,10 @@ html {
   cursor: pointer;
 }
 
-.leg1 {
 
+/* Jambes */
+
+.leg1 {
   border:2px solid white;
   width: 20%;
   height: 68%;
@@ -215,12 +273,14 @@ html {
   align-items: center;
   cursor: pointer;
 }
+
 .leg1 img {
   width: 70%;
   transform: rotate(180deg);
   padding-top: 50%;
   cursor: pointer;
 }
+
 .leg1 .span1 {
   border:2px solid white;
   top: 0%;
@@ -228,6 +288,7 @@ html {
   left: 50%;
   position: absolute;
 }
+
 .leg1 .span2 {
   border:2px solid white;
   bottom: 0%;
@@ -235,6 +296,7 @@ html {
   left: 47%;
   position: absolute;
 }
+
 .leg1 .span3 {
   border:2px solid white;
   bottom: 37%;
@@ -275,6 +337,7 @@ html {
   left: 61%;
   position: absolute;
 }
+
 .leg2 .span2 {
   border:2px solid white;
   bottom: 47%;
@@ -282,6 +345,7 @@ html {
   right: 84%;
   position: absolute;
 }
+
 .leg2 .span3 {
   border:2px solid white;
   bottom: 52%;
@@ -289,6 +353,9 @@ html {
   right: -79%;
   position: absolute;
 }
+
+
+/* Plaque d'immatriculation */
 
 .numberplate {
   border:2px solid white;
@@ -302,7 +369,6 @@ html {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-
 }
 
 .numberplate img {
@@ -310,6 +376,9 @@ html {
   padding-left: 10%;
   cursor: pointer;
 }
+
+
+/* Pieds */
 
 .foot1 {
   border:2px solid white;
@@ -323,12 +392,14 @@ html {
   align-items: center;
   cursor: pointer;
 }
+
 .foot1 img {
   width: 70%;
   z-index: 30;
   transform: rotate(-180deg);
   cursor: pointer;
 }
+
 .foot1 .span1 {
   border:2px solid white;
   top: 70%;
@@ -336,6 +407,7 @@ html {
   left:65%;
   position: absolute;
 }
+
 .foot1 .span2 {
   border:2px solid white;
   bottom: 70%;
@@ -343,6 +415,7 @@ html {
   left: 69%;
   position: absolute;
 }
+
 .foot1 .span3 {
   border:2px solid white;
   bottom: 70%;
@@ -363,6 +436,7 @@ html {
   align-items: center;
   cursor: pointer;
 }
+
 .foot2 img {
   width: 70%;
   z-index: 30;
@@ -376,6 +450,7 @@ html {
   left: 34%;
   position: absolute;
 }
+
 .foot2 .span2 {
   border:2px solid white;
   bottom: 28%;
@@ -383,6 +458,7 @@ html {
   left: 82%;
   position: absolute;
 }
+
 .foot2 .span3 {
   border:2px solid white;
   bottom: 29%;
@@ -390,6 +466,9 @@ html {
   right: 69%;
   position: absolute;
 }
+
+
+/* Bras */
 
 .arm1 {
   border:2px solid white;
@@ -403,6 +482,7 @@ html {
   align-items: center;
   cursor: pointer;
 }
+
 .arm1 img {
   width: 55%;
   transform: rotate(-90deg);
@@ -416,6 +496,7 @@ html {
   left: 88%;
   position: absolute;
 }
+
 .arm1 .span2 {
   border:2px solid white;
   bottom: 50%;
@@ -423,6 +504,7 @@ html {
   right: 92%;
   position: absolute;
 }
+
 .arm1 .span3 {
   border:2px solid white;
   bottom: 77%;
@@ -443,6 +525,7 @@ html {
   align-items: center;
   cursor: pointer;
 }
+
 .arm2 img {
   width: 55%;
   transform: rotate(90deg);
@@ -456,6 +539,7 @@ html {
   left: 50%;
   position: absolute;
 }
+
 .arm2 .span2 {
   border:2px solid white;
   bottom: 50%;
@@ -463,14 +547,17 @@ html {
   right: 0%;
   position: absolute;
 }
+
 .arm2 .span3 {
   border:2px solid white;
   bottom: 77%;
   height: 22%;
   right: 88%;
   position: absolute;
-  
 }
+
+
+/* Sticker */
 
 .sticker {
   border:2px solid white;
@@ -484,50 +571,9 @@ html {
   align-items: center;
   cursor: pointer;
 }
+
 .sticker img {
   width: 120%;
   padding-left: 20%;
   cursor: pointer;
-}
-
-/* LEVIER */
-
-.gear-lever {
-  width: 14.95%;
-  height: 25%;
-  position: absolute;
-  top: 72.3%; 
-  left:83.5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-
-}
-.gear-lever .knob {
-  height: 20%;
-  position: absolute;
-  top: 42%; 
-  left:25%;
-}
-.gear-lever img {
-  width: 50%;
-  
-}
-
-.gear-lever div {
-  width: 44%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-family: 'aukera';
-  font-size: 20px;
-  color: white;
-  margin-block: 10px;
-  cursor: pointer;
-}
-
-.gear-lever p {
-  cursor : pointer;
 }
