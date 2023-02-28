@@ -1,38 +1,40 @@
 /* FONTS */
 
 @font-face {
-  font-family: 'aukera';
-  src: url('../assets/font/aukera/aukera-Regular.eot');
-  src: url('../assets/font/aukera/aukera-Regular.eot') format('embedded-opentype'),
-      url('../assets/font/aukera/aukera-Regular.woff2') format('woff2'),
-      url('../assets/font/aukera/aukera-Regular.woff') format('woff'),
-      url('../assets/font/aukera/aukera-Regular.ttf') format('truetype');
+  font-family: "aukera";
+  src: url("../assets/font/aukera/aukera-Regular.eot");
+  src: url("../assets/font/aukera/aukera-Regular.eot")
+      format("embedded-opentype"),
+    url("../assets/font/aukera/aukera-Regular.woff2") format("woff2"),
+    url("../assets/font/aukera/aukera-Regular.woff") format("woff"),
+    url("../assets/font/aukera/aukera-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
-  
+
 @font-face {
-  font-family: 'Blocus';
-  src: url('../assets/font/blocus/Blocus-Regular.eot');
-  src: url('../assets/font/blocus/Blocus-Regular.eot') format('embedded-opentype'),
-      url('../assets/font/blocus/Blocus-Regular.woff2') format('woff2'),
-      url('../assets/font/blocus/Blocus-Regular.woff') format('woff'),
-      url('../assets/font/blocus/Blocus-Regular.ttf') format('truetype');
+  font-family: "Blocus";
+  src: url("../assets/font/blocus/Blocus-Regular.eot");
+  src: url("../assets/font/blocus/Blocus-Regular.eot")
+      format("embedded-opentype"),
+    url("../assets/font/blocus/Blocus-Regular.woff2") format("woff2"),
+    url("../assets/font/blocus/Blocus-Regular.woff") format("woff"),
+    url("../assets/font/blocus/Blocus-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
-  
+
 /* BASE */
 
 * {
-  margin:0;
+  margin: 0;
   padding: 0;
-  border : 0px;
+  border: 0px;
 }
 
-body{
+body {
   background-color: black;
   width: 1920px;
   height: 1080px;
@@ -47,17 +49,15 @@ html {
   display: none;
 }
 
-
 /* POSITIONNEMENT DU PHONOPAPER */
 
 .phonopaper {
   position: absolute;
-  height : 100vh;
+  height: 100vh;
   padding: 20px;
-  z-index : -30;
-  left : calc(60% - 705px)
+  z-index: -30;
+  left: calc(60% - 705px);
 }
-
 
 /* POSITIONNEMENT DES TEXTES */
 
@@ -68,7 +68,7 @@ html {
   left: 10%;
   transform: rotate(-112deg);
   color: red;
-  font-family: 'Blocus';
+  font-family: "Blocus";
   position: absolute;
   z-index: -10;
 }
@@ -80,11 +80,10 @@ html {
   transform: rotate(8deg);
   right: calc(0px - 36px);
   color: red;
-  font-family: 'Blocus';
+  font-family: "Blocus";
   position: absolute;
   z-index: -10;
 }
-
 
 /* POSITIONNEMENT DES ELEMENTS DU CORPS */
 
@@ -100,9 +99,9 @@ html {
   transform: rotate(34deg);
 }
 
-.trunk{
-  width : 600px;
-  left : 14%;
+.trunk {
+  width: 600px;
+  left: 14%;
   bottom: -300px;
   transform: rotate(-77deg);
 }
@@ -168,5 +167,4 @@ html {
   bottom: -8%;
   transform: rotate(343deg);
   z-index: 5;
-  
 }

@@ -1,24 +1,26 @@
 /* FONTS */
 
 @font-face {
-  font-family: 'aukera';
-  src: url('../assets/font/aukera/aukera-Regular.eot');
-  src: url('../assets/font/aukera/aukera-Regular.eot') format('embedded-opentype'),
-      url('../assets/font/aukera/aukera-Regular.woff2') format('woff2'),
-      url('../assets/font/aukera/aukera-Regular.woff') format('woff'),
-      url('../assets/font/aukera/aukera-Regular.ttf') format('truetype');
+  font-family: "aukera";
+  src: url("../assets/font/aukera/aukera-Regular.eot");
+  src: url("../assets/font/aukera/aukera-Regular.eot")
+      format("embedded-opentype"),
+    url("../assets/font/aukera/aukera-Regular.woff2") format("woff2"),
+    url("../assets/font/aukera/aukera-Regular.woff") format("woff"),
+    url("../assets/font/aukera/aukera-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
-  
+
 @font-face {
-  font-family: 'Blocus';
-  src: url('../assets/font/blocus/Blocus-Regular.eot');
-  src: url('../assets/font/blocus/Blocus-Regular.eot') format('embedded-opentype'),
-      url('../assets/font/blocus/Blocus-Regular.woff2') format('woff2'),
-      url('../assets/font/blocus/Blocus-Regular.woff') format('woff'),
-      url('../assets/font/blocus/Blocus-Regular.ttf') format('truetype');
+  font-family: "Blocus";
+  src: url("../assets/font/blocus/Blocus-Regular.eot");
+  src: url("../assets/font/blocus/Blocus-Regular.eot")
+      format("embedded-opentype"),
+    url("../assets/font/blocus/Blocus-Regular.woff2") format("woff2"),
+    url("../assets/font/blocus/Blocus-Regular.woff") format("woff"),
+    url("../assets/font/blocus/Blocus-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -27,9 +29,9 @@
 /* BASE */
 
 * {
-  margin:0;
+  margin: 0;
   padding: 0;
-  border : 0px;
+  border: 0px;
 }
 
 body {
@@ -47,7 +49,9 @@ html {
   display: none;
 }
 
-.text1, .text2, .phonopaper {
+.text1,
+.text2,
+.phonopaper {
   display: none;
 }
 
@@ -55,21 +59,20 @@ html {
   visibility: hidden;
 }
 
-
 /* MISE EN FORME DU BOUTON */
 
 .starter {
   text-align: center;
   font-size: 16px;
-  width : 400px;
-  height : 100px;
+  width: 400px;
+  height: 100px;
   background-color: black;
-  color : white;
-  position : absolute;
-  top : calc(50% - 100px);
-  right : calc(50% - 200px);
+  color: white;
+  position: absolute;
+  top: calc(50% - 100px);
+  right: calc(50% - 200px);
   cursor: pointer;
-  font-family: 'aukera';
+  font-family: "aukera";
   border-radius: 50%;
   border: 2px solid white;
   z-index: 20;
@@ -79,28 +82,26 @@ html {
   background-color: red;
 }
 
-
 /* MISE EN FORME DU CONTAINER D'INTRO */
 
 .intro {
-  position : absolute;
-  width : 100vw;
-  height : 100vh;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
   z-index: 10;
-  top:0;
+  top: 0;
   left: 0;
   box-sizing: content-box;
 }
 
-
 /* MISE EN FORME DE LA VIDEO */
 
-.road{
-  position : absolute;
-  width : 100vw;
-  height : 100vh;
+.road {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
   z-index: 15;
-  top:0;
+  top: 0;
   left: 0;
   box-sizing: content-box;
   display: flex;
@@ -109,10 +110,9 @@ html {
   transform: translate(-36%, -34%) scale(0.8);
 }
 
-#road-video{
+#road-video {
   height: 30%;
 }
-
 
 /* MISE EN FORME DU LEVIER */
 
@@ -120,8 +120,8 @@ html {
   width: 14.95%;
   height: 25%;
   position: absolute;
-  top: 72.3%; 
-  left:83.5%;
+  top: 72.3%;
+  left: 83.5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -132,8 +132,8 @@ html {
 .gear-lever .knob {
   height: 20%;
   position: absolute;
-  top: 42%; 
-  left:25%;
+  top: 42%;
+  left: 25%;
 }
 
 .gear-lever img {
@@ -145,7 +145,7 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-family: 'aukera';
+  font-family: "aukera";
   font-size: 20px;
   color: white;
   margin-block: 10px;
@@ -153,16 +153,15 @@ html {
 }
 
 .gear-lever p {
-  cursor : pointer;
+  cursor: pointer;
 }
-
 
 /* MISE EN FORME DES PARTIES DU CORPS */
 
 /* Tête */
 
 .head {
-  border:2px solid white;
+  border: 2px solid white;
   width: 30%;
   height: 40%;
   position: absolute;
@@ -181,38 +180,37 @@ html {
 }
 
 .head .span1 {
-  border:2px solid white;
+  border: 2px solid white;
   right: 90%;
   width: 9.5%;
   position: absolute;
 }
 
 .head .span2 {
-  border:2px solid white;
+  border: 2px solid white;
   bottom: 73%;
   height: 26.5%;
   position: absolute;
 }
 
 .head .span3 {
-  border:2px solid white;
+  border: 2px solid white;
   top: 69%;
   height: 30%;
   position: absolute;
 }
 
 .head .span4 {
-  border:2px solid white;
+  border: 2px solid white;
   left: 91%;
-  width:8.5%;
+  width: 8.5%;
   position: absolute;
 }
-
 
 /* Tronc */
 
 .trunk {
-  border:2px solid white;
+  border: 2px solid white;
   width: 20%;
   height: 68%;
   position: absolute;
@@ -225,43 +223,41 @@ html {
 }
 
 .trunk .span1 {
-  border:2px solid white;
+  border: 2px solid white;
   top: 85%;
   height: 14.5%;
   position: absolute;
 }
 
 .trunk .span2 {
-  border:2px solid white;
+  border: 2px solid white;
   bottom: 90%;
   height: 9.5%;
   position: absolute;
 }
 
 .trunk .span3 {
-  border:2px solid white;
+  border: 2px solid white;
   right: 79%;
   width: 20%;
   position: absolute;
 }
 
 .trunk .span4 {
-  border:2px solid white;
+  border: 2px solid white;
   left: 81%;
   width: 18%;
   position: absolute;
-
 }
 .trunk img {
   width: 160%;
   cursor: pointer;
 }
 
-
 /* Jambes */
 
 .leg1 {
-  border:2px solid white;
+  border: 2px solid white;
   width: 20%;
   height: 68%;
   position: absolute;
@@ -282,7 +278,7 @@ html {
 }
 
 .leg1 .span1 {
-  border:2px solid white;
+  border: 2px solid white;
   top: 0%;
   height: 9%;
   left: 50%;
@@ -290,7 +286,7 @@ html {
 }
 
 .leg1 .span2 {
-  border:2px solid white;
+  border: 2px solid white;
   bottom: 0%;
   height: 26%;
   left: 47%;
@@ -298,7 +294,7 @@ html {
 }
 
 .leg1 .span3 {
-  border:2px solid white;
+  border: 2px solid white;
   bottom: 37%;
   width: 31%;
   right: 68%;
@@ -306,9 +302,9 @@ html {
 }
 
 .leg2 {
-  border-top:2px solid white;
-  border-left:2px solid white;
-  border-bottom:2px solid white;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
   border-right: 3px solid black;
   width: 25.6%;
   height: 25%;
@@ -331,7 +327,7 @@ html {
 }
 
 .leg2 .span1 {
-  border:2px solid white;
+  border: 2px solid white;
   top: 0;
   height: 33%;
   left: 61%;
@@ -339,7 +335,7 @@ html {
 }
 
 .leg2 .span2 {
-  border:2px solid white;
+  border: 2px solid white;
   bottom: 47%;
   width: 15%;
   right: 84%;
@@ -347,19 +343,18 @@ html {
 }
 
 .leg2 .span3 {
-  border:2px solid white;
+  border: 2px solid white;
   bottom: 52%;
   width: 58%;
   right: -79%;
   position: absolute;
 }
 
-
 /* Plaque d'immatriculation */
 
 .numberplate {
-  border:2px solid white;
-  width:25.6%;
+  border: 2px solid white;
+  width: 25.6%;
   height: 15%;
   position: absolute;
   z-index: 20;
@@ -377,11 +372,10 @@ html {
   cursor: pointer;
 }
 
-
 /* Pieds */
 
 .foot1 {
-  border:2px solid white;
+  border: 2px solid white;
   width: 15%;
   height: 27.7%;
   position: absolute;
@@ -401,15 +395,15 @@ html {
 }
 
 .foot1 .span1 {
-  border:2px solid white;
+  border: 2px solid white;
   top: 70%;
   height: 29%;
-  left:65%;
+  left: 65%;
   position: absolute;
 }
 
 .foot1 .span2 {
-  border:2px solid white;
+  border: 2px solid white;
   bottom: 70%;
   width: 30%;
   left: 69%;
@@ -417,7 +411,7 @@ html {
 }
 
 .foot1 .span3 {
-  border:2px solid white;
+  border: 2px solid white;
   bottom: 70%;
   width: 18%;
   right: 81%;
@@ -425,7 +419,7 @@ html {
 }
 
 .foot2 {
-  border:2px solid white;
+  border: 2px solid white;
   width: 14.95%;
   height: 27.7%;
   position: absolute;
@@ -444,7 +438,7 @@ html {
 }
 
 .foot2 .span1 {
-  border:2px solid white;
+  border: 2px solid white;
   top: 0%;
   height: 29%;
   left: 34%;
@@ -452,7 +446,7 @@ html {
 }
 
 .foot2 .span2 {
-  border:2px solid white;
+  border: 2px solid white;
   bottom: 28%;
   width: 17%;
   left: 82%;
@@ -460,18 +454,17 @@ html {
 }
 
 .foot2 .span3 {
-  border:2px solid white;
+  border: 2px solid white;
   bottom: 29%;
   width: 30%;
   right: 69%;
   position: absolute;
 }
 
-
 /* Bras */
 
 .arm1 {
-  border:2px solid white;
+  border: 2px solid white;
   width: 33%;
   height: 25%;
   position: absolute;
@@ -490,7 +483,7 @@ html {
 }
 
 .arm1 .span1 {
-  border:2px solid white;
+  border: 2px solid white;
   top: 73%;
   height: 25%;
   left: 88%;
@@ -498,7 +491,7 @@ html {
 }
 
 .arm1 .span2 {
-  border:2px solid white;
+  border: 2px solid white;
   bottom: 50%;
   width: 7%;
   right: 92%;
@@ -506,7 +499,7 @@ html {
 }
 
 .arm1 .span3 {
-  border:2px solid white;
+  border: 2px solid white;
   bottom: 77%;
   height: 22%;
   right: 50%;
@@ -514,12 +507,12 @@ html {
 }
 
 .arm2 {
-  border:2px solid white;
+  border: 2px solid white;
   width: 32.7%;
   height: 25%;
   position: absolute;
-  top: 72.3%; 
-  left:35.1%;
+  top: 72.3%;
+  left: 35.1%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -533,7 +526,7 @@ html {
 }
 
 .arm2 .span1 {
-  border:2px solid white;
+  border: 2px solid white;
   top: 73%;
   height: 25%;
   left: 50%;
@@ -541,7 +534,7 @@ html {
 }
 
 .arm2 .span2 {
-  border:2px solid white;
+  border: 2px solid white;
   bottom: 50%;
   width: 7%;
   right: 0%;
@@ -549,22 +542,21 @@ html {
 }
 
 .arm2 .span3 {
-  border:2px solid white;
+  border: 2px solid white;
   bottom: 77%;
   height: 22%;
   right: 88%;
   position: absolute;
 }
 
-
 /* Sticker */
 
 .sticker {
-  border:2px solid white;
+  border: 2px solid white;
   width: 14.95%;
   height: 25%;
   position: absolute;
-  top: 72.3%; 
+  top: 72.3%;
   left: 67.95%;
   display: flex;
   justify-content: center;

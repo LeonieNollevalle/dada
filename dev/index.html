@@ -1,115 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link id="css" rel="stylesheet" href="style.css">
-  <title>DADA</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link id="css" rel="stylesheet" href="style.css" />
+    <title>DADA</title>
+  </head>
 
-<body>
+  <body>
+    <button class="starter">Commencer l'expérience</button>
 
-  <button class="starter">Commencer l'expérience</button>
-
-  <div class="intro" >
-    <video id='intro-video' autoplay='true' playsinline="true" height="100%"> 
-      <source src="../assets/videos/introduction.mp4" type="video/mp4">
-    </video>
-    
-  </div>
-
-
-  <div id='video-container' class="hidden">
-    <video id='road-video' autoplay='true' loop='true' playsinline="true" > 
-      <source src="../assets/videos/road.mp4" type="video/mp4">
-    </video>
-  </div>
-
-  <div class="gear-lever "> 
-    <div>
-      <p id="vitesse1">1</p>
-      <p id="vitesse3">3</p>
-      <p id="vitesse5">5</p>
+    <div class="intro">
+      <video id="intro-video" autoplay="true" playsinline="true" height="100%">
+        <source src="../assets/videos/introduction.mp4" type="video/mp4" />
+      </video>
     </div>
-    <img src="../assets/images/gear-lever/base.svg"/>
-    <img class="knob" src="../assets/images/gear-lever/knob.svg"/>
-    <div>
-      <p id="vitesse2">2</p>
-      <p id="vitesse4">4</p>
-      <p id="crash">D</p>
-    </div>  
-  </div>
 
+    <div id="video-container" class="hidden">
+      <video id="road-video" autoplay="true" loop="true" playsinline="true">
+        <source src="../assets/videos/road.mp4" type="video/mp4" />
+      </video>
+    </div>
 
-  <p class="text1 step2">
-    VROUM VROUM VROUM VROUM VROUM VROUM VROUM VROUM VROUM VROUM VROUM VROUM VROUM VROUM VROUM VROUM
-</p>
+    <div class="gear-lever">
+      <div>
+        <p id="vitesse1">1</p>
+        <p id="vitesse3">3</p>
+        <p id="vitesse5">5</p>
+      </div>
+      <img src="../assets/images/gear-lever/base.svg" />
+      <img class="knob" src="../assets/images/gear-lever/knob.svg" />
+      <div>
+        <p id="vitesse2">2</p>
+        <p id="vitesse4">4</p>
+        <p id="crash">D</p>
+      </div>
+    </div>
 
-<p class="text2 step2">
-    BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP
-</p>
+    <p class="text1 step2">
+      VROUM VROUM VROUM VROUM VROUM VROUM VROUM VROUM VROUM VROUM VROUM VROUM
+      VROUM VROUM VROUM VROUM
+    </p>
 
-<img class="phonopaper" src="../assets/images/phonopaper.jpeg"/>
+    <p class="text2 step2">
+      BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP
+      BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP
+      BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP
+      BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP
+      BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP
+      BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP
+      BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP
+      BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP
+      BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP
+      BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP BIP
+    </p>
+
+    <img class="phonopaper" src="../assets/images/phonopaper.jpeg" />
 
     <div id="head" class="hidden">
-      <img class="element" id="headImg" src="../assets/images/initial-body/head.png"/>
+      <img
+        class="element"
+        id="headImg"
+        src="../assets/images/initial-body/head.png"
+      />
       <span class="span1"></span>
       <span class="span2"></span>
       <span class="span3"></span>
       <span class="span4"></span>
     </div>
     <div id="trunk" class="hidden">
-      <img class="element" id="trunkImg" src="../assets/images/initial-body/trunk.png"/>
+      <img
+        class="element"
+        id="trunkImg"
+        src="../assets/images/initial-body/trunk.png"
+      />
       <span class="span1"></span>
       <span class="span2"></span>
       <span class="span3"></span>
       <span class="span4"></span>
-
     </div>
     <div id="arm1" class="hidden">
-      <img class="element" id="arm1Img" src="../assets/images/initial-body/arm2.png"/>
+      <img
+        class="element"
+        id="arm1Img"
+        src="../assets/images/initial-body/arm2.png"
+      />
       <span class="span1"></span>
       <span class="span2"></span>
       <span class="span3"></span>
     </div>
     <div id="arm2" class="hidden">
-      <img class="element" id="arm2Img" src="../assets/images/initial-body/arm2.png"/>
+      <img
+        class="element"
+        id="arm2Img"
+        src="../assets/images/initial-body/arm2.png"
+      />
       <span class="span1"></span>
       <span class="span2"></span>
       <span class="span3"></span>
     </div>
     <div id="numberplate" class="hidden">
-      <img class="element" id="numberplateImg" src= "../assets/images/initial-body/numberplate.png"/>
+      <img
+        class="element"
+        id="numberplateImg"
+        src="../assets/images/initial-body/numberplate.png"
+      />
     </div>
     <div id="leg1" class="hidden">
-      <img class="element" id="leg1Img" src="../assets/images/initial-body/leg1.png"/>
+      <img
+        class="element"
+        id="leg1Img"
+        src="../assets/images/initial-body/leg1.png"
+      />
       <span class="span1"></span>
       <span class="span2"></span>
       <span class="span3"></span>
     </div>
     <div id="leg2" class="hidden">
-      <img class="element" id="leg2Img" src="../assets/images/initial-body/leg2.png"/>
+      <img
+        class="element"
+        id="leg2Img"
+        src="../assets/images/initial-body/leg2.png"
+      />
       <span class="span1"></span>
       <span class="span2"></span>
       <span class="span3"></span>
     </div>
-    
+
     <div id="foot1" class="hidden">
-      <img class="element" id="foot1Img" src="../assets/images/initial-body/foot2.png"/>
+      <img
+        class="element"
+        id="foot1Img"
+        src="../assets/images/initial-body/foot2.png"
+      />
       <span class="span1"></span>
       <span class="span2"></span>
       <span class="span3"></span>
     </div>
     <div id="foot2" class="hidden">
-      <img class="element" id="foot2Img"  src="../assets/images/initial-body/foot2.png"/>
+      <img
+        class="element"
+        id="foot2Img"
+        src="../assets/images/initial-body/foot2.png"
+      />
       <span class="span1"></span>
       <span class="span2"></span>
       <span class="span3"></span>
     </div>
     <div id="sticker" class="hidden">
-      <img class="element" id="stickerImg" src="../assets/images/initial-body/sticker.png"/>
-    </div> 
-</body>
-<script src="index.js"></script>
+      <img
+        class="element"
+        id="stickerImg"
+        src="../assets/images/initial-body/sticker.png"
+      />
+    </div>
+  </body>
+  <script src="index.js"></script>
 </html>

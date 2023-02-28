@@ -1,36 +1,37 @@
 /* FONTS */
 
 @font-face {
-  font-family: 'aukera';
-  src: url('../assets/font/aukera/aukera-Regular.eot');
-  src: url('../assets/font/aukera/aukera-Regular.eot') format('embedded-opentype'),
-      url('../assets/font/aukera/aukera-Regular.woff2') format('woff2'),
-      url('../assets/font/aukera/aukera-Regular.woff') format('woff'),
-      url('../assets/font/aukera/aukera-Regular.ttf') format('truetype');
+  font-family: "aukera";
+  src: url("../assets/font/aukera/aukera-Regular.eot");
+  src: url("../assets/font/aukera/aukera-Regular.eot")
+      format("embedded-opentype"),
+    url("../assets/font/aukera/aukera-Regular.woff2") format("woff2"),
+    url("../assets/font/aukera/aukera-Regular.woff") format("woff"),
+    url("../assets/font/aukera/aukera-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
-  
+
 @font-face {
-  font-family: 'Blocus';
-  src: url('../assets/font/blocus/Blocus-Regular.eot');
-  src: url('../assets/font/blocus/Blocus-Regular.eot') format('embedded-opentype'),
-      url('../assets/font/blocus/Blocus-Regular.woff2') format('woff2'),
-      url('../assets/font/blocus/Blocus-Regular.woff') format('woff'),
-      url('../assets/font/blocus/Blocus-Regular.ttf') format('truetype');
+  font-family: "Blocus";
+  src: url("../assets/font/blocus/Blocus-Regular.eot");
+  src: url("../assets/font/blocus/Blocus-Regular.eot")
+      format("embedded-opentype"),
+    url("../assets/font/blocus/Blocus-Regular.woff2") format("woff2"),
+    url("../assets/font/blocus/Blocus-Regular.woff") format("woff"),
+    url("../assets/font/blocus/Blocus-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
-  
 
 /* BASE */
-  
+
 * {
-  margin:0;
+  margin: 0;
   padding: 0;
-  border : 0px;
+  border: 0px;
 }
 
 body {
@@ -48,10 +49,10 @@ html {
   display: none;
 }
 
-.phonopaper, .starter {
+.phonopaper,
+.starter {
   display: none;
 }
-
 
 /* LEVIER */
 
@@ -59,8 +60,8 @@ html {
   width: 14.95%;
   height: 25%;
   position: absolute;
-  top: 77%; 
-  left:87%;
+  top: 77%;
+  left: 87%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,74 +73,71 @@ html {
 .gear-lever .knob {
   height: 20%;
   position: absolute;
-  top: 42%; 
-  left:25%;
+  top: 42%;
+  left: 25%;
 }
 
 .gear-lever img {
   width: 50%;
 }
-  
+
 .gear-lever div {
   width: 44%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-family: 'aukera';
+  font-family: "aukera";
   font-size: 20px;
   color: white;
   margin-block: 10px;
 }
 
 .gear-lever p {
-  cursor : pointer;
+  cursor: pointer;
 }
-
 
 /* VIDEO DE LA ROUTE */
 
-.road{
-  position : absolute;
-  width : 100%;
-  height : 100%;
+.road {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   z-index: -65;
-  top:0;
+  top: 0;
   left: 0;
   box-sizing: content-box;
   display: flex;
   justify-content: center;
   align-items: center;
-  transform:translate(0%, 0%) scale(1);
+  transform: translate(0%, 0%) scale(1);
 }
 
-#road-video{
+#road-video {
   height: 115%;
 }
-
 
 /* POSITIONNEMENT DES TEXTES */
 
 .step2 {
   color: red;
-  font-family: 'Blocus';
-  position : absolute;
+  font-family: "Blocus";
+  position: absolute;
   z-index: -10;
 }
 
 .text1 {
-  font-size : 60px;
-  width : 50%;
-  top : 20%;
-  left : 10%;
+  font-size: 60px;
+  width: 50%;
+  top: 20%;
+  left: 10%;
 }
 
 .text2 {
-  font-size : 40px;
-  width : 1000px;
-  top : 60%;
-  right : 10%;
+  font-size: 40px;
+  width: 1000px;
+  top: 60%;
+  right: 10%;
 }
-
 
 /* POSITIONNEMENT DES ELEMENTS DU CORPS */
 
@@ -150,14 +148,14 @@ html {
 
 #headImg {
   width: 16%;
-  left : 10%;
+  left: 10%;
   top: calc(50% - 15%);
 }
 
 #trunkImg {
-  width : 31% !important;
-  left :26%;
-  top : 17%;
+  width: 31% !important;
+  left: 26%;
+  top: 17%;
 }
 
 #arm1Img {
@@ -189,9 +187,9 @@ html {
 }
 
 #leg1Img {
-  width:18%;
+  width: 18%;
   left: 58%;
-  top:25%;
+  top: 25%;
   z-index: -4 !important;
   transform: rotate(-85deg);
 }
@@ -214,7 +212,7 @@ html {
 
 #foot2Img {
   width: 20% !important;
-  left:75%;
+  left: 75%;
   top: 30%;
   transform: rotate(-76deg);
   z-index: -5;
